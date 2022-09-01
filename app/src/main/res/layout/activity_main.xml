@@ -66,8 +66,8 @@
                     android:layout_marginHorizontal="@dimen/mg_x_s"
                     android:layout_marginTop="@dimen/mg_top"
                     android:autofillHints="name"
-                    android:hint="@string/label_name"
-                    android:inputType="text" />
+                    android:hint="@string/label_name_hint"
+                    android:inputType="textCapWords" />
 
                 <Button
                     android:id="@+id/btn_start"

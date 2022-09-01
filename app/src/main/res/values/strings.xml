@@ -3,6 +3,6 @@
     <string name="title_app_name">Quiz App!</string>
     <string name="title_welcome">Welcome</string>
     <string name="instr_enter_name">Please enter your name.</string>
-    <string name="label_name">Name</string>
+    <string name="label_name_hint">Rick Astley</string>
     <string name="label_start">start</string>
 </resources>
