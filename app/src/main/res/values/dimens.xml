@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mg_top">20dp</dimen>
-    <dimen name="mg_x">10dp</dimen>
+    <dimen name="mg_x_s">10dp</dimen>
+    <dimen name="mg_x_m">15dp</dimen>
     <dimen name="mg_inner">20dp</dimen>
     <dimen name="rd_card_corners">15dp</dimen>
 </resources>
