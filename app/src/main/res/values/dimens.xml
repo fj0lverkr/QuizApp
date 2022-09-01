@@ -4,5 +4,5 @@
     <dimen name="mg_x_s">10dp</dimen>
     <dimen name="mg_x_m">15dp</dimen>
     <dimen name="mg_inner">20dp</dimen>
-    <dimen name="rd_card_corners">15dp</dimen>
+    <dimen name="rd_card_corners">8dp</dimen>
 </resources>
