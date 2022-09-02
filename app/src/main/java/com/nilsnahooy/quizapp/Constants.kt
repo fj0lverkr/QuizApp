@@ -4,25 +4,25 @@ object Constants {
     fun getQuestions(): ArrayList<Question> {
         val questionList = ArrayList<Question>()
         val q1 = Question(
-            1, "To which Country does this flag belong?",
+            1, "To which country does this flag belong?",
             R.drawable.ic_flag_of_argentina,
             arrayListOf("Argentina", "Austria", "Belgium", "None of the above"),
             0
         )
         val q2 = Question(
-            2, "To which Country does this flag belong?",
+            2, "To which country does this flag belong?",
             R.drawable.ic_flag_of_australia,
             arrayListOf("Austria", "Australia", "Fiji", "None of the above"),
             1
         )
         val q3 = Question(
-            3, "To which Country does this flag belong?",
+            3, "To which country does this flag belong?",
             R.drawable.ic_flag_of_belgium,
             arrayListOf("Germany", "France", "Belgium", "None of the above"),
             2
         )
         val q4 = Question(
-            4, "To which Country does this flag belong?",
+            4, "To which country does this flag belong?",
             R.drawable.ic_flag_of_brazil,
             arrayListOf("Argentina", "Austria", "Belgium", "None of the above"),
             3
@@ -40,7 +40,7 @@ object Constants {
             2
         )
         val q7 = Question(
-            7, "To which Country does this flag belong?",
+            7, "To which country does this flag belong?",
             R.drawable.ic_flag_of_germany,
             arrayListOf("Germany", "Austria", "Belgium", "Switzerland"),
             0
@@ -52,13 +52,13 @@ object Constants {
             3
         )
         val q9 = Question(
-            9, "To which Country does this flag belong?",
+            9, "To which country does this flag belong?",
             R.drawable.ic_flag_of_kuwait,
             arrayListOf("Shell", "Q8", "Texaco", "I don't get it?"),
             2
         )
         val q10 = Question(
-            10, "To which Country does this flag belong?",
+            10, "To which country does this flag belong?",
             R.drawable.ic_flag_of_new_zealand,
             arrayListOf("Great Britain", "Fiji", "Australia", "None of the above"),
             0

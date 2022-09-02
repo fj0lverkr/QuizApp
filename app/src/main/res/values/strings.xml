@@ -6,4 +6,6 @@
     <string name="label_name_hint">Rick Astley</string>
     <string name="label_start">start</string>
     <string name="error_name_missing">Enter your name.</string>
+    <string name="flag_content_description">Image of a flag.</string>
+    <string name="quiz_progress">%1$d / 10</string>
 </resources>
