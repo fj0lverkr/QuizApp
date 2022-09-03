@@ -12,7 +12,7 @@
                 android:bottom="20dp"
                 android:top="40dp" />
 
-            <solid android:color="@color/white" />
+            <solid android:color="@color/red" />
         </shape>
     </item>
 </layer-list>

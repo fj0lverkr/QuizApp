@@ -6,4 +6,5 @@
     <dimen name="mg_x_l">25dp</dimen>
     <dimen name="mg_inner">20dp</dimen>
     <dimen name="rd_card_corners">8dp</dimen>
+    <dimen name="q_text_size">24sp</dimen>
 </resources>

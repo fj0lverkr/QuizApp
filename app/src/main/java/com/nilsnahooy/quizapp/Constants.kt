@@ -55,13 +55,13 @@ object Constants {
             9, "To which country does this flag belong?",
             R.drawable.ic_flag_of_kuwait,
             arrayListOf("Shell", "Q8", "Texaco", "I don't get it?"),
-            2
+            1
         )
         val q10 = Question(
             10, "To which country does this flag belong?",
             R.drawable.ic_flag_of_new_zealand,
             arrayListOf("Great Britain", "Fiji", "Australia", "None of the above"),
-            0
+            3
         )
         val tempList = mutableListOf(q1, q2, q3, q4, q5, q6, q7, q8, q9, q10)
         tempList.shuffle()

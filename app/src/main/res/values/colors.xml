@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_trans">#66000000</color>
     <color name="white_trans">#ddffffff</color>
+    <color name="green">#FF88CC33</color>
+    <color name="red">#FFCC3333</color>
 </resources>
