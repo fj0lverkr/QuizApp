@@ -35,6 +35,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
                     correctAnswer = null
                     isContinue = true
                     currentQuestion += 1
+                    btnSubmit.text = resources.getText(R.string.label_next)
                 }
             } else {
                 if(currentQuestion <= questionList.size -1) {
@@ -54,6 +55,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         val ivFlag: ImageView = findViewById(R.id.iv_flag)
         val pbProgress: ProgressBar = findViewById(R.id.pb_progress)
         val tvProgress: TextView = findViewById(R.id.tv_progress)
+        val btnSubmit: Button = findViewById(R.id.btn_submit)
         val progress: Int = 100 / ql.size * (i + 1)
         val answers: ArrayList<String> = q.options
         isContinue = false
@@ -63,6 +65,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         pbProgress.progress = progress
         tvProgress.text = String.format(getString(R.string.quiz_progress), i + 1)
         wrapper.removeAllViewsInLayout()
+        btnSubmit.text = resources.getText(R.string.label_answer)
         for (x in answers.indices) {
             val a = answers[x]
             val tvAnswer = TextView(this)
