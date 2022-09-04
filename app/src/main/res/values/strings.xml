@@ -7,7 +7,7 @@
     <string name="label_start">start</string>
     <string name="error_name_missing">Enter your name.</string>
     <string name="flag_content_description">Image of a flag.</string>
-    <string name="quiz_progress">%1$d / 10</string>
+    <string name="quiz_progress">%1$d/10</string>
     <string name="label_answer">submit</string>
     <string name="label_next">next</string>
 </resources>
