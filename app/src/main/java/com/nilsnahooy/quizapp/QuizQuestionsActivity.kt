@@ -18,12 +18,16 @@ class QuizQuestionsActivity : AppCompatActivity() {
     private var totalQuestions: Int = 0
     private var correctQuestions: Int = 0
     private var isContinue: Boolean = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
+
         val questionList = Constants.getQuestions()
         val btnSubmit: Button = findViewById(R.id.btn_submit)
+
         totalQuestions = questionList.size
+
         btnSubmit.setOnClickListener {
             if (!isContinue) {
                 if (selectedAnswer != null && correctAnswer != null) {
@@ -35,7 +39,11 @@ class QuizQuestionsActivity : AppCompatActivity() {
                     correctAnswer = null
                     isContinue = true
                     currentQuestion += 1
-                    btnSubmit.text = resources.getText(R.string.label_next)
+                    btnSubmit.text = if (currentQuestion < questionList.size-1) {
+                        resources.getText(R.string.label_next)
+                    }else{
+                        resources.getText(R.string.label_finish)
+                    }
                 }
             } else {
                 if(currentQuestion <= questionList.size -1) {
@@ -45,6 +53,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
                 }
             }
         }
+
         setQuestion(questionList, currentQuestion)
     }
 
@@ -58,14 +67,16 @@ class QuizQuestionsActivity : AppCompatActivity() {
         val btnSubmit: Button = findViewById(R.id.btn_submit)
         val progress: Int = 100 / ql.size * (i + 1)
         val answers: ArrayList<String> = q.options
+
         isContinue = false
         correctAnswer = q.correctAnswer
         tvQuestion.text = q.question
         ivFlag.setImageResource(q.image)
         pbProgress.progress = progress
-        tvProgress.text = String.format(getString(R.string.quiz_progress), i + 1)
+        tvProgress.text = String.format(getString(R.string.quiz_progress), i + 1, ql.size)
         wrapper.removeAllViewsInLayout()
         btnSubmit.text = resources.getText(R.string.label_answer)
+
         for (x in answers.indices) {
             val a = answers[x]
             val tvAnswer = TextView(this)
@@ -91,13 +102,13 @@ class QuizQuestionsActivity : AppCompatActivity() {
                         null)
                 selectedAnswer = current.tag.toString().toInt()
             }
-
             wrapper.addView(tvAnswer)
         }
     }
 
     private fun showQuestionResult() {
         val wrapper: LinearLayoutCompat = findViewById(R.id.ll_answer_wrapper)
+
         for(child in wrapper.children) {
             val c: TextView = child as TextView
             c.setOnClickListener(null)
