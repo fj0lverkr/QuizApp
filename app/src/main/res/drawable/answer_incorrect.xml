@@ -3,14 +3,15 @@
     <item
         android:left="35dp"
         android:right="35dp"
-        android:top="25dp">
+        android:top="10dp"
+        android:bottom="10dp">
         <shape android:shape="rectangle">
 
             <corners android:radius="@dimen/rd_card_corners" />
 
             <padding
                 android:bottom="20dp"
-                android:top="40dp" />
+                android:top="20dp" />
 
             <solid android:color="@color/red" />
         </shape>
