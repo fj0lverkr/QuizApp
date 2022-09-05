@@ -9,6 +9,7 @@
         <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/answer_correct.xml" value="0.1" />
         <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/answer_incorrect.xml" value="0.1" />
         <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/answer_option.xml" value="0.2245" />
+        <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/answer_option_selected.xml" value="0.1765" />
         <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/nilsn/AndroidStudioProjects/QuizApp/app/src/main/res/layout/activity_quiz_questions.xml" value="0.26551226551226553" />
       </map>

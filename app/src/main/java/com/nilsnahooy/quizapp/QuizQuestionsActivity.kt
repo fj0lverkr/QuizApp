@@ -81,10 +81,14 @@ class QuizQuestionsActivity : AppCompatActivity() {
             tvAnswer.setOnClickListener {
                 for (tv in wrapper.children) {
                     val t: TextView = tv as TextView
-                    t.setTextAppearance(this, R.style.q_text_base)
+                    t.background =
+                        ResourcesCompat.getDrawable(resources, R.drawable.answer_option,
+                            null)
                 }
                 val current: TextView = it as TextView
-                current.setTextAppearance(this, R.style.q_text_selected)
+                current.background =
+                    ResourcesCompat.getDrawable(resources, R.drawable.answer_option_selected,
+                        null)
                 selectedAnswer = current.tag.toString().toInt()
             }
 
