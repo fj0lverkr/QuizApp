@@ -9,7 +9,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.LinearLayoutCompat
-import androidx.core.content.res.ResourcesCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.children
 
 class QuizQuestionsActivity : AppCompatActivity() {
@@ -91,22 +91,17 @@ class QuizQuestionsActivity : AppCompatActivity() {
             tvAnswer.tag = "$x"
             tvAnswer.width = LinearLayoutCompat.LayoutParams.MATCH_PARENT
             tvAnswer.gravity = Gravity.CENTER
-            tvAnswer.background =
-                ResourcesCompat.getDrawable(resources, R.drawable.answer_option, null)
+            tvAnswer.background = ContextCompat.getDrawable(this, R.drawable.answer_option)
             tvAnswer.textSize = 24f
-            tvAnswer.setTextColor(ResourcesCompat.getColor(resources, R.color.black_trans,
-                null))
+            tvAnswer.setTextColor(ContextCompat.getColor(this, R.color.black_trans))
             tvAnswer.setOnClickListener {
                 for (tv in wrapper.children) {
                     val t: TextView = tv as TextView
-                    t.background =
-                        ResourcesCompat.getDrawable(resources, R.drawable.answer_option,
-                            null)
+                    t.background = ContextCompat.getDrawable(this, R.drawable.answer_option)
                 }
                 val current: TextView = it as TextView
-                current.background =
-                    ResourcesCompat.getDrawable(resources, R.drawable.answer_option_selected,
-                        null)
+                current.background = ContextCompat.getDrawable(this,
+                    R.drawable.answer_option_selected)
                 selectedAnswer = current.tag.toString().toInt()
             }
             wrapper.addView(tvAnswer)
@@ -121,17 +116,14 @@ class QuizQuestionsActivity : AppCompatActivity() {
             c.setOnClickListener(null)
             when (c.tag.toString()) {
                 correctAnswer.toString() -> {
-                    c.setTextColor(ResourcesCompat.getColor(resources, R.color.white,
-                        null))
-                    c.background = ResourcesCompat.getDrawable(resources, R.drawable.answer_correct,
-                        null)
+                    c.setTextColor(ContextCompat.getColor(this, R.color.white))
+                    c.background = ContextCompat.getDrawable(this,R.drawable.answer_correct)
                     continue
                 }
                 selectedAnswer.toString() -> {
-                    c.setTextColor(ResourcesCompat.getColor(resources, R.color.white,
-                        null))
-                    c.background = ResourcesCompat.getDrawable(resources,
-                        R.drawable.answer_incorrect, null)
+                    c.setTextColor(ContextCompat.getColor(this, R.color.white))
+                    c.background = ContextCompat.getDrawable(this,
+                        R.drawable.answer_incorrect)
                     continue
                 }
                 else -> {
