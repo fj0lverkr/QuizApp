@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_answer"
-                android:textSize="18sp"
+                android:textSize="@dimen/q_sub_text"
                 android:textAllCaps="true"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

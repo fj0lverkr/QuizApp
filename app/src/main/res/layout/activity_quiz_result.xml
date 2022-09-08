@@ -34,7 +34,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_greeting"
-        android:text="@string/title_greeting"
         android:textSize="@dimen/q_text_size"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/iv_trophy"
@@ -44,10 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_result"
-        android:textColor="@color/material_dynamic_neutral80"
+        android:textColor="@color/grey"
         android:textSize="@dimen/q_sub_text"
         app:layout_constraintTop_toBottomOf="@id/tv_greeting"
-        android:text="@string/quiz_result"
         android:gravity="center"
         android:layout_marginTop="@dimen/mg_top"/>
 

@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         val startButton = findViewById<Button>(R.id.btn_start)
         val nameField = findViewById<EditText>(R.id.input_name)
-        val shakeField =
         startButton.setOnClickListener {
             if (nameField.length() == 0){ nameField.error = getString(R.string.error_name_missing)}
             else {
                 val intentToQuestions = Intent(this,
                     QuizQuestionsActivity::class.java)
+                intentToQuestions.putExtra("playerName", nameField.text.toString())
                 startActivity(intentToQuestions)
                 finish()
             }

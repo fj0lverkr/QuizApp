@@ -77,7 +77,7 @@
                     android:layout_marginTop="@dimen/mg_top"
                     android:text="@string/label_start"
                     android:textAllCaps="true"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/q_sub_text" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.cardview.widget.CardView>

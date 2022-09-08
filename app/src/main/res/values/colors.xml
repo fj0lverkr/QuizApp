@@ -11,4 +11,5 @@
     <color name="white_trans">#ddffffff</color>
     <color name="green">#FF88CC33</color>
     <color name="red">#FFCC3333</color>
+    <color name="grey">#CC999999</color>
 </resources>

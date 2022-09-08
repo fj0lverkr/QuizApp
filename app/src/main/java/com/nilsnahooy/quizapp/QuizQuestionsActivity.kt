@@ -1,5 +1,6 @@
 package com.nilsnahooy.quizapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
@@ -23,6 +24,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
 
+        val playerName: String = intent.getStringExtra("playerName").toString()
         val questionList = Constants.getQuestions()
         val btnSubmit: Button = findViewById(R.id.btn_submit)
 
@@ -49,7 +51,12 @@ class QuizQuestionsActivity : AppCompatActivity() {
                 if(currentQuestion <= questionList.size -1) {
                     setQuestion(questionList, currentQuestion)
                 } else {
-                    //TODO create endgame activity and go there
+                    val intentToResult = Intent(this, ActivityQuizResult::class.java)
+                    intentToResult.putExtra("playerName", playerName)
+                    intentToResult.putExtra("playerScore", correctQuestions)
+                    intentToResult.putExtra("totalQuestions", totalQuestions)
+                    startActivity(intentToResult)
+                    finish()
                 }
             }
         }
