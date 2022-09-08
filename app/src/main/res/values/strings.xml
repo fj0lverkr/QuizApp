@@ -11,4 +11,8 @@
     <string name="label_answer">submit</string>
     <string name="label_next">next</string>
     <string name="label_finish">finish</string>
+    <string name="title_result">Result</string>
+    <string name="title_greeting">Hey!\nCongrats, %1$s!</string>
+    <string name="quiz_result">Your score is %1$d out of %2$d.</string>
+    <string name="trophy_content_description">Trophy for participating.</string>
 </resources>
